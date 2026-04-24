@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Bites - Festival Gastronómico Nocturno</title>
+    <meta name="description"
+        content="Únete a Midnight Bites, el festival gastronómico nocturno más espectacular. Descubre sabores únicos, música en vivo y un ambiente inigualable.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#hero">Midnight<span>Bites</span></a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#dates">Fechas</a></li>
+                    <li><a href="#zones">Zonas</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu Toggle (Extra point) -->
+            <button class="mobile-menu-toggle" aria-label="Abrir menú" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">El Sabor Despierta Cuando <span>Cae La Noche</span></h1>
+                <p class="hero-subtitle">Descubre una propuesta culinaria inolvidable bajo las estrellas. Música, arte y
+                    la mejor gastronomía callejera te esperan.</p>
+                <a href="#dates" class="cta-button">Ver Próximos Eventos</a>
+            </div>
+        </section>
+
+        <!-- About Section (Flexbox & List) -->
+        <section class="about section" id="about">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Vive la Experiencia <span class="text-accent">Nocturna</span></h2>
+                    <p>Midnight Bites no es solo comida; es un viaje sensorial. Transformamos las noches de la ciudad en
+                        un punto de encuentro vibrante donde chefs locales e internacionales muestran su talento en un
+                        ambiente cargado de neón, música y buenas vibras.</p>
+
+                    <h3>¿Qué encontrarás?</h3>
+                    <!-- Semantic List Obligatory -->
+                    <ul class="features-list">
+                        <li><strong>🔥 Show Cooking en vivo:</strong> Observa a los maestros en acción.</li>
+                        <li><strong>🌮 Diversidad Culinaria:</strong> Más de 50 stands de comida internacional.</li>
+                        <li><strong>🎵 Ambiente Inigualable:</strong> DJs y bandas locales cada noche.</li>
+                        <li><strong>📸 Zonas Instagrameables:</strong> Arte de neón y spots perfectos para tus redes.
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Plato delicioso de alta cocina">
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Dates (Table) -->
+        <section class="dates section bg-dark" id="dates">
+            <div class="container">
+                <h2 class="text-center">Nuestra <span class="text-accent">Gira</span></h2>
+                <p class="text-center section-desc">Asegura tu entrada. Nos vemos en las principales ciudades.</p>
+
+                <div class="table-responsive">
+                    <!-- Obligatory Table -->
+                    <table class="dates-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Ciudad</th>
+                                <th>Horario</th>
+                                <th>Atracción Principal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12 Mayo</td>
+                                <td>Barranquilla</td>
+                                <td>6:00 PM</td>
+                                <td>Street Food Show</td>
+                            </tr>
+                            <tr>
+                                <td>19 Mayo</td>
+                                <td>Cartagena</td>
+                                <td>7:00 PM</td>
+                                <td>Live Cooking</td>
+                            </tr>
+                            <tr>
+                                <td>26 Mayo</td>
+                                <td>Santa Marta</td>
+                                <td>5:30 PM</td>
+                                <td>Dessert Contest</td>
+                            </tr>
+                            <tr>
+                                <td>02 Junio</td>
+                                <td>Medellín</td>
+                                <td>6:00 PM</td>
+                                <td>Vegan Night Fusion</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Zones Section (Cards & Grid) -->
+        <section class="zones section" id="zones">
+            <div class="container">
+                <h2 class="text-center">Zonas <span class="text-accent">Temáticas</span></h2>
+                <p class="text-center section-desc">Explora nuestros diferentes espacios diseñados para cada paladar.
+                </p>
+
+                <div class="zones-grid">
+                    <!-- Card 1 -->
+                    <article class="zone-card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Pizza artesanal - Calle de Fuego">
+                        </div>
+                        <div class="card-content">
+                            <h3>Calle de Fuego</h3>
+                            <p>Asados, hamburguesas ahumadas y pizzas artesanales al horno de leña.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="zone-card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Sushi - Asian Neon">
+                        </div>
+                        <div class="card-content">
+                            <h3>Asian Neon</h3>
+                            <p>Auténtica comida asiática, sushi, ramen y baos bajo la luz del neón.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="zone-card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Postres - Sweet Galaxy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Sweet Galaxy</h3>
+                            <p>El paraíso de los postres: helados nitrogenados, crepes y locuras dulces.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section (Grid) -->
+        <section class="gallery section bg-dark" id="gallery">
+            <div class="container">
+                <h2 class="text-center">Momentos <span class="text-accent">Inolvidables</span></h2>
+
+                <div class="image-gallery">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Ambiente de festival de comida en la noche" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Persona comiendo comida callejera" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Chef preparando comida en vivo" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Mesa con varias pizzas" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Comida asiática iluminada por neón" class="gallery-item">
+                </div>
+            </div>
+        </section>
+        <!-- Sponsors Section (Extra Point) -->
+        <section class="sponsors section" id="sponsors">
+            <div class="container">
+                <h2 class="text-center">Nuestros <span class="text-accent">Aliados</span></h2>
+                <div class="sponsors-flex">
+                    <span class="sponsor-logo">Uber Eats</span>
+                    <span class="sponsor-logo">Coca-Cola</span>
+                    <span class="sponsor-logo">MasterCard</span>
+                    <span class="sponsor-logo">Heineken</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2>Midnight<span>Bites</span></h2>
+                <p>El festival gastronómico que ilumina tus noches.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#dates">Fechas</a></li>
+                    <li><a href="#zones">Zonas</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>📍 Diferentes locaciones (ver Fechas)</p>
+                <p>✉️ info@midnightbites.com</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Midnight Bites. Todos los derechos reservados.</p>
+            <p class="developer-credit">Desarrollado con 💻 y ☕ por <strong>Wladimir Arnedo</strong>.</p>
+            <p class="developer-desc">Developer Junior | Apasionado por Python y el Frontend ✨</p>
+        </div>
+    </footer>
+
+    <!-- Simple Script for Mobile Menu -->
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-list').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
