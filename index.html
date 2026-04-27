@@ -7,6 +7,21 @@
     <title>Midnight Bites - Festival Gastronómico Nocturno</title>
     <meta name="description"
         content="Únete a Midnight Bites, el festival gastronómico nocturno más espectacular. Descubre sabores únicos, música en vivo y un ambiente inigualable.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://midnightbites.com/">
+    <meta property="og:title" content="Midnight Bites - Festival Gastronómico Nocturno">
+    <meta property="og:description" content="Descubre el sabor de la noche en el festival gastronómico más vibrante.">
+    <meta property="og:image" content="assets/images/hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Midnight Bites - Festival Gastronómico Nocturno">
+    <meta property="twitter:description"
+        content="Descubre el sabor de la noche en el festival gastronómico más vibrante.">
+    <meta property="twitter:image" content="assets/images/hero.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +33,13 @@
 </head>
 
 <body>
+
+    <!-- Background Decorations (Floating Neon Orbs) -->
+    <div class="bg-decorations">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
     <!-- Header & Navigation -->
     <header class="header" id="header">
@@ -34,7 +56,7 @@
                     <li><a href="#gallery">Galería</a></li>
                 </ul>
             </nav>
-            <!-- Mobile Menu Toggle (Extra point) -->
+            <!-- Mobile Menu Toggle  -->
             <button class="mobile-menu-toggle" aria-label="Abrir menú" id="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -58,8 +80,8 @@
         <!-- About Section (Flexbox & List) -->
         <section class="about section" id="about">
             <div class="container about-container">
-                <div class="about-text">
-                    <h2>Vive la Experiencia <span class="text-accent">Nocturna</span></h2>
+                <div class="about-text reveal reveal-left">
+                    <h2 class="reveal reveal-clip">Vive la Experiencia <span class="text-accent">Nocturna</span></h2>
                     <p>Midnight Bites no es solo comida; es un viaje sensorial. Transformamos las noches de la ciudad en
                         un punto de encuentro vibrante donde chefs locales e internacionales muestran su talento en un
                         ambiente cargado de neón, música y buenas vibras.</p>
@@ -67,16 +89,19 @@
                     <h3>¿Qué encontrarás?</h3>
                     <!-- Semantic List Obligatory -->
                     <ul class="features-list">
-                        <li><strong>🔥 Show Cooking en vivo:</strong> Observa a los maestros en acción.</li>
-                        <li><strong>🌮 Diversidad Culinaria:</strong> Más de 50 stands de comida internacional.</li>
-                        <li><strong>🎵 Ambiente Inigualable:</strong> DJs y bandas locales cada noche.</li>
-                        <li><strong>📸 Zonas Instagrameables:</strong> Arte de neón y spots perfectos para tus redes.
+                        <li class="reveal reveal-up"><img src="assets/icons/fire.svg" alt="Fuego" class="icon">
+                            <strong>Show Cooking en vivo:</strong> Observa a los maestros en acción.</li>
+                        <li class="reveal reveal-up"><img src="assets/icons/utensils.svg" alt="Cubiertos" class="icon">
+                            <strong>Diversidad Culinaria:</strong> Más de 50 stands de comida internacional.</li>
+                        <li class="reveal reveal-up"><img src="assets/icons/music.svg" alt="Música" class="icon">
+                            <strong>Ambiente Inigualable:</strong> DJs y bandas locales cada noche.</li>
+                        <li class="reveal reveal-up"><img src="assets/icons/camera.svg" alt="Cámara" class="icon">
+                            <strong>Zonas Instagrameables:</strong> Arte de neón y spots perfectos para tus redes.
                         </li>
                     </ul>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Plato delicioso de alta cocina">
+                <div class="about-image reveal reveal-right">
+                    <img src="assets/images/about.png" alt="Chef preparando comida de noche" loading="lazy">
                 </div>
             </div>
         </section>
@@ -84,10 +109,11 @@
         <!-- Upcoming Dates (Table) -->
         <section class="dates section bg-dark" id="dates">
             <div class="container">
-                <h2 class="text-center">Nuestra <span class="text-accent">Gira</span></h2>
-                <p class="text-center section-desc">Asegura tu entrada. Nos vemos en las principales ciudades.</p>
+                <h2 class="text-center reveal reveal-clip">Nuestra <span class="text-accent">Gira</span></h2>
+                <p class="text-center section-desc reveal reveal-up">Asegura tu entrada. Nos vemos en las principales
+                    ciudades.</p>
 
-                <div class="table-responsive">
+                <div class="table-responsive reveal reveal-up">
                     <!-- Obligatory Table -->
                     <table class="dates-table">
                         <thead>
@@ -100,28 +126,28 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>12 Mayo</td>
-                                <td>Barranquilla</td>
-                                <td>6:00 PM</td>
-                                <td>Street Food Show</td>
+                                <td data-label="Fecha">12 Mayo</td>
+                                <td data-label="Ciudad">Barranquilla</td>
+                                <td data-label="Horario">6:00 PM</td>
+                                <td data-label="Atracción Principal">Street Food Show</td>
                             </tr>
                             <tr>
-                                <td>19 Mayo</td>
-                                <td>Cartagena</td>
-                                <td>7:00 PM</td>
-                                <td>Live Cooking</td>
+                                <td data-label="Fecha">19 Mayo</td>
+                                <td data-label="Ciudad">Cartagena</td>
+                                <td data-label="Horario">7:00 PM</td>
+                                <td data-label="Atracción Principal">Live Cooking</td>
                             </tr>
                             <tr>
-                                <td>26 Mayo</td>
-                                <td>Santa Marta</td>
-                                <td>5:30 PM</td>
-                                <td>Dessert Contest</td>
+                                <td data-label="Fecha">26 Mayo</td>
+                                <td data-label="Ciudad">Santa Marta</td>
+                                <td data-label="Horario">5:30 PM</td>
+                                <td data-label="Atracción Principal">Dessert Contest</td>
                             </tr>
                             <tr>
-                                <td>02 Junio</td>
-                                <td>Medellín</td>
-                                <td>6:00 PM</td>
-                                <td>Vegan Night Fusion</td>
+                                <td data-label="Fecha">02 Junio</td>
+                                <td data-label="Ciudad">Medellín</td>
+                                <td data-label="Horario">6:00 PM</td>
+                                <td data-label="Atracción Principal">Vegan Night Fusion</td>
                             </tr>
                         </tbody>
                     </table>
@@ -132,16 +158,16 @@
         <!-- Food Zones Section (Cards & Grid) -->
         <section class="zones section" id="zones">
             <div class="container">
-                <h2 class="text-center">Zonas <span class="text-accent">Temáticas</span></h2>
-                <p class="text-center section-desc">Explora nuestros diferentes espacios diseñados para cada paladar.
+                <h2 class="text-center reveal reveal-clip">Zonas <span class="text-accent">Temáticas</span></h2>
+                <p class="text-center section-desc reveal reveal-up">Explora nuestros diferentes espacios diseñados para
+                    cada paladar.
                 </p>
 
                 <div class="zones-grid">
                     <!-- Card 1 -->
-                    <article class="zone-card">
+                    <article class="zone-card reveal reveal-up">
                         <div class="card-img">
-                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                                alt="Pizza artesanal - Calle de Fuego">
+                            <img src="assets/images/pizza.png" alt="Pizza artesanal - Calle de Fuego" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Calle de Fuego</h3>
@@ -150,10 +176,9 @@
                     </article>
 
                     <!-- Card 2 -->
-                    <article class="zone-card">
+                    <article class="zone-card reveal reveal-up">
                         <div class="card-img">
-                            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                                alt="Sushi - Asian Neon">
+                            <img src="assets/images/sushi.png" alt="Sushi - Asian Neon" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Asian Neon</h3>
@@ -162,10 +187,9 @@
                     </article>
 
                     <!-- Card 3 -->
-                    <article class="zone-card">
+                    <article class="zone-card reveal reveal-up">
                         <div class="card-img">
-                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                                alt="Postres - Sweet Galaxy">
+                            <img src="assets/images/desserts.png" alt="Postres - Sweet Galaxy" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Sweet Galaxy</h3>
@@ -182,16 +206,26 @@
                 <h2 class="text-center">Momentos <span class="text-accent">Inolvidables</span></h2>
 
                 <div class="image-gallery">
-                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                        alt="Ambiente de festival de comida en la noche" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                        alt="Persona comiendo comida callejera" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                        alt="Chef preparando comida en vivo" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                        alt="Mesa con varias pizzas" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                        alt="Comida asiática iluminada por neón" class="gallery-item">
+                    <figure class="reveal reveal-scale">
+                        <img src="assets/images/gallery-1.png" alt="Ambiente de festival de comida en la noche"
+                            class="gallery-item" loading="lazy">
+                    </figure>
+                    <figure class="reveal reveal-scale">
+                        <img src="assets/images/pizza.png" alt="Detalle de pizza artesanal" class="gallery-item"
+                            loading="lazy">
+                    </figure>
+                    <figure class="reveal reveal-scale">
+                        <img src="assets/images/about.png" alt="Chef preparando comida" class="gallery-item"
+                            loading="lazy">
+                    </figure>
+                    <figure class="reveal reveal-scale">
+                        <img src="assets/images/sushi.png" alt="Sushi en el festival" class="gallery-item"
+                            loading="lazy">
+                    </figure>
+                    <figure class="reveal reveal-scale">
+                        <img src="assets/images/desserts.png" alt="Postres nitrogenados" class="gallery-item"
+                            loading="lazy">
+                    </figure>
                 </div>
             </div>
         </section>
@@ -199,12 +233,13 @@
         <section class="sponsors section" id="sponsors">
             <div class="container">
                 <h2 class="text-center">Nuestros <span class="text-accent">Aliados</span></h2>
-                <div class="sponsors-flex">
-                    <span class="sponsor-logo">Uber Eats</span>
-                    <span class="sponsor-logo">Coca-Cola</span>
-                    <span class="sponsor-logo">MasterCard</span>
-                    <span class="sponsor-logo">Heineken</span>
-                </div>
+                <ul class="sponsors-flex reveal reveal-up">
+                    <li class="sponsor-logo">Uber Eats</li>
+                    <li class="sponsor-logo">Coca-Cola</li>
+                    <li class="sponsor-logo">Rappi</li>
+                    <li class="sponsor-logo">Heineken</li>
+                    <li class="sponsor-logo">Nestlé</li>
+                </ul>
             </div>
         </section>
 
@@ -228,16 +263,20 @@
                 </ul>
             </div>
 
-            <div class="footer-contact">
+            <address class="footer-contact">
                 <h3>Contacto</h3>
-                <p>📍 Diferentes locaciones (ver Fechas)</p>
-                <p>✉️ info@midnightbites.com</p>
+                <p><img src="assets/icons/location.svg" alt="" class="icon" aria-hidden="true"> Diferentes locaciones
+                    (ver Fechas)</p>
+                <p><img src="assets/icons/envelope.svg" alt="" class="icon" aria-hidden="true"> <a
+                        href="mailto:info@midnightbites.com">info@midnightbites.com</a></p>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook">📘</a>
-                    <a href="#" aria-label="Instagram">📸</a>
-                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt=""
+                            aria-hidden="true"></a>
+                    <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""
+                            aria-hidden="true"></a>
+                    <a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" alt="" aria-hidden="true"></a>
                 </div>
-            </div>
+            </address>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Midnight Bites. Todos los derechos reservados.</p>
@@ -246,13 +285,8 @@
         </div>
     </footer>
 
-    <!-- Simple Script for Mobile Menu -->
-    <script>
-        document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
-            document.querySelector('.nav-list').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <!-- Modular JS -->
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

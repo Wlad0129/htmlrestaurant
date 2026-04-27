@@ -9,18 +9,25 @@ This project is a responsive, modern landing page built for a fictional night fo
 **Developed by Wladimir Arnedo** - A passionate Python and Frontend Developer, currently studying "Programar 1". This project showcases advanced HTML5 structure, CSS3 Flexbox/Grid layouts, and responsive design techniques.
 
 ## Technologies Used
-- HTML5 (Semantic Structure)
-- CSS3 (Variables, Flexbox, Grid, Animations, Hover States)
-- Vanilla JavaScript (Mobile Menu Toggle)
-- Google Fonts (Montserrat and Open Sans)
+- HTML5 (Semantic Structure, SEO Meta Tags, OG Tags)
+- CSS3 (Variables, Flexbox, Grid, Advanced Animations, Glassmorphism)
+- Vanilla JavaScript (Modular ES6 architecture, Intersection Observer, Mouse Parallax)
+- Google Fonts (Outfit and Playfair Display)
+- Local SVG Icons (Custom curated collection)
 
 ## Project Structure
 ```text
 festival-landing/
-│
-├── index.html        # Main HTML structure with semantic elements
+├── index.html        # Main HTML structure with semantic elements & SEO tags
 ├── css/
-│   └── styles.css    # CSS styling including Grid/Flexbox and responsive media queries
+│   └── styles.css    # CSS design system (Variables, Grid/Flexbox, Animations)
+├── js/               # Modular JavaScript Architecture
+│   ├── main.js       # Entry point
+│   ├── menu.js       # Mobile menu logic
+│   └── animations.js # Scroll reveal & complex interactions
+├── assets/
+│   ├── images/       # High-quality cinematic assets
+│   └── icons/        # Local SVG neon icons
 └── README.md         # Project documentation (this file)
 ```
 
@@ -31,7 +38,8 @@ festival-landing/
 4. Alternatively, simply double-click the `index.html` file to open it directly in any modern web browser.
 
 ## Extra Features Included
-- **Mobile Menu Toggle:** A fully functional hamburger menu implemented with vanilla JS for smaller screens.
-- **Responsive Data Table:** A structured, accessible HTML table representing the upcoming dates.
-- **CSS Animations:** Smooth fade-in effects in the Hero section and hover transform effects on cards and buttons.
-- **Grid & Flexbox:** Complex, responsive layouts utilized properly according to modern standards.
+- **Modular JS:** Clean, scalable script organization using ES Modules.
+- **Complex Animations:** Includes Mouse Parallax, Magnetic Buttons, and Smart Staggered Reveals.
+- **SEO & Semantics:** Optimized with Open Graph tags, Figure/Caption semantics, and Address tags.
+- **Local SVGs:** No external dependencies for icons, ensuring maximum performance and privacy.
+- **Fully Responsive:** Perfectly adapted for all screen sizes, including a custom mobile table layout.
